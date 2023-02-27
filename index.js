@@ -48,7 +48,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: '[required] Enter instructions for the use of your application. Feel free to include examples as well:',
         validate: usageInput => {
             if (usageInput) {
@@ -67,109 +67,29 @@ const questions = [
         default: "N/A",
     },
     {
-        type: 'checkbox',
-        name: 'other',
-        message: 'Please select any other sections you would like to include in your README file',
-        choices: [
-            {
-                name: 'Credits',
-                checked: false,
-            },
-            {
-                name: 'Tests',
-                checked: false,
-            },
-            {
-                name: 'Features',
-                checked: false,
-            },
-            {
-                name: 'Contribute',
-                checked: false,
-            },
-            {
-                name: 'Questions',
-                checked: false,
-            }
-        ]
-    },
-    {
-        type: 'input',
-        name: 'Credits',
-        message: 'List the github username of any collaborators for your application (please separate multiple users with a space):',
-        validate: creditsInput => {
-            if (creditsInput) {
-                return true;
-            } else {
-                console.log('Please enter the github username of any collaborators your project.')
-                return false;
-            }
-        }
-    },
-    {
         type: 'input',
         name: 'tests',
         message: 'Describe any tests that were performed for this application:',
-        validate: testsInput => {
-            if (testsInput) {
-                return true;
-            } else {
-                console.log('Please describe any tests performed for your project.')
-                return false;
-            }
-        }
     },
     {
         type: 'input',
         name: 'features',
-        message: 'Describe list the features of your application:',
-        validate: featuresInput => {
-            if (featuresInput) {
-                return true;
-            } else {
-                console.log('Please list the features of your project.')
-                return false;
-            }
-        }
+        message: 'List the features of your application:',
     },
     {
         type: 'input',
         name: 'contribute',
         message: 'Write instructions on how others can contribute to your project:',
-        validate: contributeInput => {
-            if (contributeInput) {
-                return true;
-            } else {
-                console.log('Please write how others can contribute to your project project.')
-                return false;
-            }
-        }
     },
     {
         type: 'input',
         name: 'username',
         message: 'Please enter your Github username:',
-        validate: usernameInput => {
-            if (usernameInput) {
-                return true;
-            } else {
-                console.log('Please enter your github username.')
-                return false;
-            }
-        }
     },
     {
         type: 'input',
         name: 'email',
         message: 'Please enter the email where people can reach you for questions about your application:',
-        validate: emailInput => {
-            if (emailInput) {
-                return true;
-            } else {
-                console.log('Please enter your email.')
-                return false;
-            }
-        },
     }
 ];
 

@@ -19,23 +19,98 @@ function renderLicenseBadge(license) {
     return `[![Mozilla License Badge](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
   } else if (license === 'Unilicense') {
     return `[![Unilicense License Badge](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
+  } else {
+    return '';
   }
 };
 
-// ['Apache', 'GNU General Public License, MIT', 'BSD', 'Boost', 'Creative Commons', 'Eclipse', 'Mozilla', 'Unilicense',]
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'Apache') {
+    return `[Apache License Link](https://opensource.org/licenses/Apache-2.0)`;
+  } else if (license === 'GNU General Public License') {
+    return `[GNU License Link](https://www.gnu.org/licenses/gpl-3.0)`;
+  } else if (license === 'MIT') {
+    return `[MIT License Link](https://opensource.org/licenses/MIT)`;
+  } else if (license === 'BSD') {
+    return `[BSD License Link](https://opensource.org/licenses/BSD-3-Clause)`;
+  } else if (license === 'Boost') {
+    return `[Boost License Link](https://www.boost.org/LICENSE_1_0.txt)`;
+  } else if (license === 'Creative Commons') {
+    return `[Creative Commons License Link](http://creativecommons.org/publicdomain/zero/1.0/)`
+  } else if (license === 'Eclipse') {
+    return `[Eclipse License Link](https://opensource.org/licenses/EPL-1.0)`
+  } else if (license === 'Mozilla') {
+    return `[Mozilla License Link](https://opensource.org/licenses/MPL-2.0)`
+  } else if (license === 'Unilicense') {
+    return `[Unilicense License Link](http://unlicense.org/)`
+  } else {
+    return '';
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === 'N/A') {
+    return '';
+  } else {
+    return `<br />## License <br />This application is covered under the ${license} license. Please click the below link to learn more about it! <br />${renderLicenseLink(license)}`
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  
+${renderLicenseBadge(data.license)}
+  
 
+## Description
+${data.description}
+
+<br />
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Features](#features)
+* [Contribute](#contribute)
+* [Tests](#tests)
+* [Questions](#questions)
+
+<br />
+## Installation
+${data.installation}
+
+<br />
+## Usage
+${data.usage}
+
+${renderLicenseSection(data.license)}
+
+<br />
+## Features
+${data.features}
+
+<br />
+## Contribute
+${data.contribute}
+
+<br />
+## Tests
+${data.tests}
+
+<br />
+## Questions
+Want to reach out? You can find me below:
+<br />
+Github: [${data.username}](https://github.com/${data.username})
+<br />
+Email: [${data.email}](mailto:${data.email})
 `;
 }
 
