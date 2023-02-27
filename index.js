@@ -22,7 +22,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: '[required] Enter a short description of your project:',
         validate: descriptionInput => {
             if (descriptionInput) {
@@ -35,7 +35,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: '[required] Are there any steps required to install your project? List them here:',
         validate: installInput => {
             if (installInput) {
@@ -61,14 +61,14 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'License',
+        name: 'license',
         message: 'Choose the license used for your application:',
-        choices: ['Apache', 'GNU General Public License, MIT', 'BSD', 'Boost', 'Creative Commons', 'Eclipse', 'GNU', 'Mozilla', 'Unilicense',],
+        choices: ['Apache', 'GNU General Public License', 'MIT', 'BSD', 'Boost', 'Creative Commons', 'Eclipse', 'Mozilla', 'Unilicense',],
         default: "N/A",
     },
     {
         type: 'checkbox',
-        name: 'Other',
+        name: 'other',
         message: 'Please select any other sections you would like to include in your README file',
         choices: [
             {
@@ -108,7 +108,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Tests',
+        name: 'tests',
         message: 'Describe any tests that were performed for this application:',
         validate: testsInput => {
             if (testsInput) {
@@ -121,7 +121,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Features',
+        name: 'features',
         message: 'Describe list the features of your application:',
         validate: featuresInput => {
             if (featuresInput) {
@@ -134,7 +134,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Contribute',
+        name: 'contribute',
         message: 'Write instructions on how others can contribute to your project:',
         validate: contributeInput => {
             if (contributeInput) {
