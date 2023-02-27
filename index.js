@@ -63,7 +63,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose the license used for your application:',
-        choices: ['Apache', 'GNU General Public License', 'MIT', 'BSD', 'Boost', 'Creative Commons', 'Eclipse', 'Mozilla', 'Unilicense',],
+        choices: ['Apache', 'GNU General Public', 'MIT', 'BSD', 'Boost', 'Creative Commons', 'Eclipse', 'Mozilla', 'Unilicense',],
         default: "N/A",
     },
     {

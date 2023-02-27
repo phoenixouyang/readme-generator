@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   if (license === 'Apache') {
     return `[![Apache License Badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-  } else if (license === 'GNU General Public License') {
+  } else if (license === 'GNU General Public') {
     return `[![GNU License Badge](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
   } else if (license === 'MIT') {
     return `[![MIT License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
@@ -31,7 +31,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license === 'Apache') {
     return `[Apache License Link](https://opensource.org/licenses/Apache-2.0)`;
-  } else if (license === 'GNU General Public License') {
+  } else if (license === 'GNU General Public') {
     return `[GNU License Link](https://www.gnu.org/licenses/gpl-3.0)`;
   } else if (license === 'MIT') {
     return `[MIT License Link](https://opensource.org/licenses/MIT)`;
@@ -58,7 +58,9 @@ function renderLicenseSection(license) {
   if (license === 'N/A') {
     return '';
   } else {
-    return `<br />## License <br />This application is covered under the ${license} license. Please click the below link to learn more about it! <br />${renderLicenseLink(license)}`
+    return `## License
+This application is covered under the ${license} license. Please click the below link to learn more about it!
+${renderLicenseLink(license)}`
   }
 }
 
@@ -72,7 +74,6 @@ ${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
 
-<br />
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -82,29 +83,23 @@ ${data.description}
 * [Tests](#tests)
 * [Questions](#questions)
 
-<br />
-## Installation
+## Installation 
 ${data.installation}
 
-<br />
 ## Usage
 ${data.usage}
 
 ${renderLicenseSection(data.license)}
 
-<br />
 ## Features
 ${data.features}
 
-<br />
 ## Contribute
 ${data.contribute}
 
-<br />
 ## Tests
 ${data.tests}
 
-<br />
 ## Questions
 Want to reach out? You can find me below:
 <br />

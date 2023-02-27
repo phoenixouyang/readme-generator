@@ -1,12 +1,11 @@
-# s
+# my project title!
   
-[![GNU License Badge](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![MIT License Badge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 
 ## Description
-s
+this is a description of my project
 
-<br />
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,32 +15,28 @@ s
 * [Tests](#tests)
 * [Questions](#questions)
 
-<br />
-## Installation
-s
+## Installation 
+these are the steps to install my project
 
-<br />
 ## Usage
-s
+these are instructions for the use of my application.
 
-<br />## License <br />This application is covered under the GNU General Public License license. Please click the below link to learn more about it! <br />[GNU License Link](https://www.gnu.org/licenses/gpl-3.0)
+## License
+This application is covered under the MIT license. Please click the below link to learn more about it!
+[MIT License Link](https://opensource.org/licenses/MIT)
 
-<br />
 ## Features
-s
+these are the features of my application
 
-<br />
 ## Contribute
-s
+these are instructions for how others can contribute
 
-<br />
 ## Tests
-s
+these are the tests performed for my application
 
-<br />
 ## Questions
 Want to reach out? You can find me below:
 <br />
 Github: [phoenixouyang](https://github.com/phoenixouyang)
 <br />
-Email: [s](mailto:s)
+Email: [myemail@gmail.com](mailto:myemail@gmail.com)
