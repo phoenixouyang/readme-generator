@@ -22,6 +22,9 @@ Questions and prompts about your application will appear in the terminal. Answer
 
 <br>
 Once you've answered all the questions, a README.md file will be created in the 'dist' folder.
+<br>
+
+[Click here for a demonstration video of this application!](https://drive.google.com/file/d/1YR7_9b0_SGNrJyKLDqiYvL22bN8g0CMt/view?usp=sharing)
 
 ## Credits
 Starter code was provided from the repo [here](https://github.com/coding-boot-camp/potential-enigma).<br>
